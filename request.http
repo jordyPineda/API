@@ -1,0 +1,26 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Luis algo ",
+    "age":"23",
+    "email":"luis@gmail.com",
+    "type":"Estudiante"
+}
+###
+GET http://localhost:9000/api/users HTTP/1.1
+###
+GET http://localhost:9000/api/users/643c5dba3e8db8667b8ead1e HTTP/1.1
+###
+PUT  http://localhost:9000/api/users/643c5dba3e8db8667b8ead1e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "jordy esteban pineda",
+    "age":"23",
+    "email":"luis@gmail.com",
+    "type":"Estudiante"
+}
+###
+DELETE  http://localhost:9000/api/users/643c5ef853a39ec3b8507e74 HTTP/1.1
